@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.display {
+    height: 200px;
+}
+.calculator {
+    width: auto;
+    height: auto;
+    padding: 0px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #000;
+    background-color: rgb(33, 36, 44);
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+    grid-template-rows: repeat(5, 50px);
+    border-radius: 20px;
+    gap: 10px;
+    background-color: rgb(44, 44, 53);
+}
+button {
+    cursor: pointer;
+    padding: 0;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    background-color: rgb(33, 36, 44);
+    box-shadow: none; /* mirar esta propiedad*/
+}
+
+.endpage {
+    color: blue;
+}
+.btn-cyan {
+    color: cyan;
+}
+.btn-red {
+    color: red;
+}
+.btn-white {
+    color: white;
+}
