@@ -13,15 +13,14 @@
     place-items: center;
 }
 .display {
-    height: 200px;
+    height: 250px;
 }
 .calculator {
     width: auto;
     height: auto;
-    padding: 0px;
     border-radius: 20px;
-    box-shadow: 0 0 30px #000;
-    background-color: rgb(33, 36, 44);
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+    background-color: rgb(34, 37, 45);
 }
 
 .keyboard {
@@ -30,7 +29,8 @@
     grid-template-rows: repeat(5, 50px);
     border-radius: 20px;
     gap: 10px;
-    background-color: rgb(44, 44, 53);
+    padding: 20px;
+    background-color: rgb(41,45,54);
 }
 button {
     cursor: pointer;
@@ -39,19 +39,22 @@ button {
     font-size: 18px;
     font-weight: 600;
     border: none;
-    background-color: rgb(33, 36, 44);
+    background-color: rgb(39, 43, 51);
     box-shadow: none; /* mirar esta propiedad*/
 }
 
-.endpage {
-    color: blue;
+.line-gradient {
+    height: 20px;
+    background-color: aliceblue;
 }
+
 .btn-cyan {
-    color: cyan;
+    color: rgb(38, 244, 206);
 }
 .btn-red {
-    color: red;
+    color: rgb(215, 96,97);
 }
 .btn-white {
-    color: white;
+    color: rgb(255,255,255);
 }
+
