@@ -14,6 +14,14 @@
 }
 .display {
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5px;
+    text-align: end;
+    overflow-x: hidden;
+    padding: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .calculator {
     width: auto;
@@ -35,19 +43,37 @@
 button {
     cursor: pointer;
     padding: 0;
-    border-radius: 14px;
+    border-radius: 25%;
     font-size: 18px;
     font-weight: 600;
-    border: none;
+    border: 0px;
     background-color: rgb(39, 43, 51);
-    box-shadow: none; /* mirar esta propiedad*/
+    box-shadow: 1px 1px 1px rgba(34, 37, 45, 0.3);
+}
+.night-light {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.night-ligt-btn {
+    height: 32px;
+    width: 72px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(39, 43, 51);
+}
+#history {
+    font-size: 16px;
+    font-weight: 400;
+}
+#output-result {
+    font-size: 42px;
+    font-weight: 600;
 }
 
-.line-gradient {
-    height: 20px;
-    background-color: aliceblue;
+p {
+    color: rgb(255,255,255);
 }
-
 .btn-cyan {
     color: rgb(38, 244, 206);
 }
@@ -57,4 +83,7 @@ button {
 .btn-white {
     color: rgb(255,255,255);
 }
-
+.line-gradient {
+    height: 20px;
+    background-color: aliceblue;
+}
