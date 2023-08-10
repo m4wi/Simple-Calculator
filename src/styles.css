@@ -1,3 +1,8 @@
+:root{
+    --bg-color-dark: rgb(34, 37, 45);
+    --bg-keyboard-dark: rgb(41,45,54);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -16,11 +21,11 @@
     height: 250px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     gap: 5px;
     text-align: end;
     overflow-x: hidden;
-    padding: 25px;
+    padding: 0px 25px 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .calculator {
@@ -28,17 +33,15 @@
     height: auto;
     border-radius: 20px;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
-    background-color: rgb(34, 37, 45);
+    background-color: var(--bg-color-dark);
 }
 
 .keyboard {
     display: grid;
     grid-template-columns: repeat(4,50px);
     grid-template-rows: repeat(5, 50px);
-    border-radius: 20px;
     gap: 10px;
     padding: 20px;
-    background-color: rgb(41,45,54);
 }
 button {
     cursor: pointer;
@@ -51,9 +54,10 @@ button {
     box-shadow: 1px 1px 1px rgba(34, 37, 45, 0.3);
 }
 .night-light {
-    height: 100%;
+    height: 50%;
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 .night-ligt-btn {
     height: 32px;
@@ -61,7 +65,10 @@ button {
     margin-top: 10px;
     border-radius: 10px;
     background-color: rgb(39, 43, 51);
+    display: flex;
+    justify-content: space-around;
 }
+
 #history {
     font-size: 16px;
     font-weight: 400;
@@ -83,7 +90,40 @@ p {
 .btn-white {
     color: rgb(255,255,255);
 }
+.calculator-footer {
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .line-gradient {
-    height: 20px;
-    background-color: aliceblue;
+    height: 4px;
+    width: 36%;
+    border-radius: 4px;
+    background-color: #474B52;
+}
+.calculator-input {
+    background-color: var(--bg-keyboard-dark);
+    border-radius: 20px;
+}
+.bx{
+    color: white;
+}
+
+.calculator-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 0px 15px;
+    position: relative;
+    bottom: -10px;
+}
+.status-icons {
+    display: inline-flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+}
+.calculator-hour{
+    font-size: 12px;
 }

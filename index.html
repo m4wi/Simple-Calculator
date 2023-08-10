@@ -4,52 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Calculator css-->
+    <link rel="stylesheet" href="src/styles.css">
     <title>Simple Calculator</title>
 </head>
 <body>
     <div class="container">
         <section class="calculator">
-            <div class="display">
-                <div class="night-light">
-                    <div class="night-ligt-btn"></div>
+            <div class="calculator-header">
+                <div>
+                    <p class="calculator-hour">9:41</p>
                 </div>
-                <div class="operation">
-                    <p id="history">9 * 9</p>
-                  </div>
-                  <div class="result">
-                    <p id="output-result">81</p>
-                  </div>
+                <div class="status-icons">
+                    <i class='bx bx-signal-4'></i>
+                    <i class='bx bx-wifi-2'></i>
+                    <i class='bx bx-battery' ></i>
+                </div>
             </div>
-            <div class="keyboard">
-                <button class="btn-op" id="clear"><span class="btn-cyan">AC</span></button>
-                <button class="btn-op" id="invert"><span class="btn-cyan">&#177;</span></button>
-                <button class="btn-op" id="%"><span class="btn-cyan">&#37;</span></button>
-                <button class="btn-op" id="/"><span class="btn-cyan">&#247;</span></button>
-    
-                <button class="btn-number" id="7"><span class="btn-white">7</span></button>
-                <button class="btn-number" id="8"><span class="btn-white">8</span></button>
-                <button class="btn-number" id="9"><span class="btn-white">9</span></button>
-                <button class="btn-op" id="*"><span class="btn-red">&#215;</span></button>
-    
-                <button class="btn-number" id="4"><span class="btn-white">4</span></button>
-                <button class="btn-number" id="5"><span class="btn-white">5</span></button>
-                <button class="btn-number" id="6"><span class="btn-white">6</span></button>
-                <button class="btn-op" id="-"><span class="btn-red">&#8722;</span></button>
-    
-                <button class="btn-number" id="1"><span class="btn-white">1</span></button>
-                <button class="btn-number"  id="2"><span class="btn-white">2</span></button>
-                <button class="btn-number"  id="3"><span class="btn-white">3</span></button>
-                <button class="btn-op" id="+"><span class="btn-red">&#43;</span></button>
-    
-                <button class="btn-number" id="backspace"><span class="btn-white">&#10226;</span></button>
-                <button class="btn-number" id="0"><span class="btn-white">0</span></button>
-                <button class="btn-number" id="point"><span class="btn-white">.</span></button>
-                <button class="btn-op" id="="><span class="btn-red">&#61;</span></button>
-                <div class="line-gradient"></div>
+            <div class="display">
+                <div>
+                    <div class="night-light">
+                        <div class="night-ligt-btn">
+                            <button><i class='bx bx-sun' ></i></button>
+                            <button><i class='bx bx-moon' ></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="operation">
+                        <p id="history"></p>
+                    </div>
+                    <div class="result">
+                        <p id="output-result"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator-input">
+                <div class="keyboard">
+                    <button class="btn-op" id="clear"><span class="btn-cyan">AC</span></button>
+                    <button class="btn-op" id="invert"><span class="btn-cyan">&#177;</span></button>
+                    <button class="btn-op" id="%"><span class="btn-cyan">&#37;</span></button>
+                    <button class="btn-op" id="/"><span class="btn-cyan">&#247;</span></button>
+        
+                    <button class="btn-number" id="7"><span class="btn-white">7</span></button>
+                    <button class="btn-number" id="8"><span class="btn-white">8</span></button>
+                    <button class="btn-number" id="9"><span class="btn-white">9</span></button>
+                    <button class="btn-op" id="*"><span class="btn-red">&#215;</span></button>
+        
+                    <button class="btn-number" id="4"><span class="btn-white">4</span></button>
+                    <button class="btn-number" id="5"><span class="btn-white">5</span></button>
+                    <button class="btn-number" id="6"><span class="btn-white">6</span></button>
+                    <button class="btn-op" id="-"><span class="btn-red">&#8722;</span></button>
+        
+                    <button class="btn-number" id="1"><span class="btn-white">1</span></button>
+                    <button class="btn-number"  id="2"><span class="btn-white">2</span></button>
+                    <button class="btn-number"  id="3"><span class="btn-white">3</span></button>
+                    <button class="btn-op" id="+"><span class="btn-red">&#43;</span></button>
+        
+                    <button class="btn-number" id="backspace"><span class="btn-white">&#10226;</span></button>
+                    <button class="btn-number" id="0"><span class="btn-white">0</span></button>
+                    <button class="btn-number" id="point"><span class="btn-white">.</span></button>
+                    <button class="btn-op" id="="><span class="btn-red">&#61;</span></button>
+                </div>
+                <div class="calculator-footer">
+                    <div class="line-gradient"></div>
+                </div>
             </div>
         </section>
     </div>
-    <script src="calculator.js"></script>
+    <script src="src/calculator.js"></script>
 </body>
 </html>
